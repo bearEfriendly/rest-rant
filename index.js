@@ -2,6 +2,8 @@ require('dotenv').config()
 const express = ('require express')
 const app = express()
 
+app.use('/places', require('.controllers/places'))
+
 app.get('/', function (req, res) {
     // this gets sent to the client
     // your web browser most likely!
